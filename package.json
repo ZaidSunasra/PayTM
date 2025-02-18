@@ -1,22 +1,22 @@
 {
-  "name": "my-turborepo",
+  "name": "week-18",
   "private": true,
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "check-types": "turbo check-types"
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
-    "prettier": "^3.5.0",
-    "turbo": "^2.4.2",
-    "typescript": "5.7.3"
+    "@repo/eslint-config": "*",
+    "@repo/typescript-config": "*",
+    "prettier": "^3.2.5",
+    "turbo": "latest"
   },
   "engines": {
     "node": ">=18"
   },
-  "packageManager": "npm@10.8.3",
+  "packageManager": "npm@10.2.4",
   "workspaces": [
     "apps/*",
     "packages/*"
